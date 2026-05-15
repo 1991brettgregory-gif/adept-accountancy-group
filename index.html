@@ -3,119 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adept Accountancy Group</title>
+<meta name="description" content="Adept Accountancy Group provides practical accounting, tax, bookkeeping, VAT, payroll and CIS support for small businesses, sole traders, landlords and individuals in Kettering, Northamptonshire and across the UK.">
+<title>Adept Accountancy Group | Accountancy, Tax & Bookkeeping Support</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: #F7F7F7;
-        color: #0A1A2F;
-        line-height: 1.6;
-    }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #F7F7F7;
+    color: #0A1A2F;
+    line-height: 1.6;
+}
 
-    header {
-        background: #0A1A2F;
-        color: white;
-        padding: 60px 20px;
-        text-align: center;
-    }
+header {
+    background: linear-gradient(135deg, #0A1A2F, #122A47);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
 
-    /* BIGGER LOGO */
-    .logo-img {
-        width: 200px;
-        height: auto;
-        margin-bottom: 25px;
-    }
+.logo-img {
+    width: 190px;
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 24px;
+}
 
-    h1 {
-        margin: 0;
-        font-size: 2.4rem;
-        letter-spacing: 1px;
-    }
+h1 {
+    margin: 0;
+    font-size: 2.6rem;
+}
 
-    h2 {
-        margin-top: 8px;
-        font-weight: 400;
-        color: #D4AF37;
-    }
+.tagline {
+    color: #D4AF37;
+    font-size: 1.3rem;
+    max-width: 760px;
+    margin: 15px auto;
+}
 
-    .section {
-        padding: 40px 20px;
-        max-width: 900px;
-        margin: auto;
-    }
+.subtagline {
+    max-width: 760px;
+    margin: auto;
+    color: #E8EDF3;
+}
 
-    .services, .contact-box {
-        background: white;
-        border-radius: 10px;
-        padding: 30px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
+.section {
+    padding: 45px 20px;
+    max-width: 1050px;
+    margin: auto;
+}
 
-    .service-item {
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #eee;
-    }
+.card, .mini-card {
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(10,26,47,0.07);
+}
 
-    .service-item:last-child {
-        border-bottom: none;
-    }
+.grid, .services-list, .trust-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
 
-    .cta {
-        text-align: center;
-        margin-top: 40px;
-    }
+.services-list, .trust-list {
+    grid-template-columns: repeat(2, 1fr);
+}
 
-    .cta-button {
-        background: #D4AF37;
-        color: #0A1A2F;
-        padding: 14px 28px;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-    }
+.service-item {
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+    padding: 20px;
+    background: #FCFCFC;
+}
 
-    /* CONTACT FORM */
-    form input, form textarea {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        font-size: 1rem;
-    }
+.price {
+    font-weight: bold;
+}
 
-    form button {
-        cursor: pointer;
-    }
+.button {
+    background: #D4AF37;
+    color: #0A1A2F;
+    padding: 14px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
 
-    #privacy {
-        background: white;
-        padding: 40px 30px;
-        border-radius: 10px;
-        margin-top: 40px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
+.hero-actions {
+    margin-top: 30px;
+}
 
-    #privacy h2 {
-        color: #0A1A2F;
-    }
+.note {
+    background: #FFF8E1;
+    border-left: 4px solid #D4AF37;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
 
-    footer {
-        background: #0A1A2F;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-    }
+form input, form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 16px;
+    border: 1px solid #C9CDD3;
+    border-radius: 8px;
+    font-size: 1rem;
+}
 
-    footer a {
-        color: #D4AF37;
-        text-decoration: none;
+footer {
+    background: #0A1A2F;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: #D4AF37;
+}
+
+@media (max-width: 800px) {
+    .grid, .services-list, .trust-list {
+        grid-template-columns: 1fr;
     }
+}
 </style>
 </head>
 
@@ -123,36 +137,119 @@
 
 <header>
     <img src="logo.png" alt="Adept Accountancy Group Logo" class="logo-img">
+
     <h1>Adept Accountancy Group</h1>
-    <h2>Modern accounting for individuals and small businesses</h2>
+
+    <p class="tagline">
+        Practical accounting, tax and bookkeeping support for small businesses, landlords and individuals.
+    </p>
+
+    <p class="subtagline">
+        Supporting clients in Kettering, Northamptonshire and across the UK with clear advice, fixed-fee pricing and modern digital accountancy services.
+    </p>
+
+    <div class="hero-actions">
+        <a href="#contact" class="button">Request a Free Initial Call</a>
+    </div>
 </header>
 
 <section class="section">
-    <div class="services">
-        <h2 style="color:#0A1A2F;">Services & Pricing</h2>
+    <div class="grid">
+        <div class="mini-card">
+            <h3>Clear, practical support</h3>
+            <p>No jargon. No confusion. Just straightforward help with tax, accounts and bookkeeping.</p>
+        </div>
 
-        <div class="service-item"><strong>MTD Income Tax & Self Assessment</strong><br>From £25pm</div>
-        <div class="service-item"><strong>Non‑MTD Annual Self Assessment</strong><br>From £150</div>
-        <div class="service-item"><strong>Self‑Employed Partnerships</strong><br>£150 per partner (SA800 included)</div>
-        <div class="service-item"><strong>MTD VAT Check & Submit</strong><br>£25</div>
-        <div class="service-item"><strong>Limited Company Accounts</strong><br>From £50pm</div>
-        <div class="service-item"><strong>Payroll</strong><br>From £10pm</div>
-        <div class="service-item"><strong>Bookkeeping Services</strong><br>£20ph</div>
-        <div class="service-item"><strong>CIS</strong><br>Support for contractors & subcontractors</div>
+        <div class="mini-card">
+            <h3>Built for small businesses</h3>
+            <p>Ideal for sole traders, landlords, contractors, tradespeople and small limited companies.</p>
+        </div>
 
-        <div class="cta">
-            <a href="mailto:info@adeptaccountancygroup.co.uk?subject=Request%20a%20Quote&body=Please%20provide%20your%20name%2C%20contact%20details%20and%20a%20brief%20description%20of%20your%20requirements." 
-               class="cta-button">
-               Request a Quote
-            </a>
+        <div class="mini-card">
+            <h3>Modern and responsive</h3>
+            <p>Digital-first support with clear communication and agreed fees before work begins.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <div class="card">
+        <h2>Services & Pricing</h2>
+
+        <div class="services-list">
+            <div class="service-item">
+                <strong>MTD Income Tax & Self Assessment</strong><br>
+                <span class="price">From £25 per month</span>
+            </div>
+
+            <div class="service-item">
+                <strong>Non-MTD Annual Self Assessment</strong><br>
+                <span class="price">From £150</span>
+            </div>
+
+            <div class="service-item">
+                <strong>Self-Employed Partnerships</strong><br>
+                <span class="price">From £150 per partner</span>
+            </div>
+
+            <div class="service-item">
+                <strong>VAT Check & Submit</strong><br>
+                <span class="price">From £25</span>
+            </div>
+
+            <div class="service-item">
+                <strong>Limited Company Compliance</strong><br>
+                <span class="price">From £75 per month</span>
+            </div>
+
+            <div class="service-item">
+                <strong>Payroll</strong><br>
+                <span class="price">From £10 per month</span>
+            </div>
+
+            <div class="service-item">
+                <strong>Bookkeeping</strong><br>
+                <span class="price">From £50 per month</span>
+            </div>
+
+            <div class="service-item">
+                <strong>CIS Support</strong><br>
+                <span class="price">Quoted individually</span>
+            </div>
+        </div>
+
+        <div class="note">
+            Prices shown are starting prices and may vary depending on transaction volume, complexity, deadlines, software used and filing requirements. A fixed quote will always be agreed before work begins.
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="card">
+        <h2>Why Choose Adept Accountancy Group?</h2>
+
+        <ul class="trust-list">
+            <li>Fixed fees agreed in advance</li>
+            <li>Support for sole traders, landlords and small companies</li>
+            <li>Digital bookkeeping and modern cloud systems</li>
+            <li>Clear explanations without unnecessary jargon</li>
+            <li>Local support in Kettering and Northamptonshire</li>
+            <li>Remote support available across the UK</li>
+        </ul>
+
+        <div class="note">
+            Professional membership, practising licence, professional indemnity insurance and AML supervision details will be added once confirmed.
         </div>
     </div>
 </section>
 
 <section class="section" id="contact">
-    <div class="contact-box">
-        <h2 style="color:#0A1A2F;">Contact Us</h2>
-        <p>If you have any questions or would like to discuss your requirements, please complete the form below.</p>
+    <div class="card">
+        <h2>Contact Us</h2>
+
+        <p>
+            Use the form below to ask a question or request an initial call. Please do not send sensitive financial documents through this form. Secure document transfer can be arranged if needed.
+        </p>
 
         <form action="https://formsubmit.co/info@adeptaccountancygroup.co.uk" method="POST">
             <input type="hidden" name="_captcha" value="false">
@@ -165,27 +262,58 @@
             <label><strong>Email</strong></label>
             <input type="email" name="email" required>
 
+            <label><strong>Phone number</strong></label>
+            <input type="tel" name="phone">
+
             <label><strong>Your Message</strong></label>
             <textarea name="message" rows="5" required></textarea>
 
-            <button type="submit" class="cta-button">Send Message</button>
+            <button type="submit" class="button">Send Message</button>
         </form>
     </div>
 </section>
 
-<section id="privacy" class="section">
-    <h2>Privacy Policy</h2>
+<section class="section" id="privacy">
+    <div class="card">
+        <h2>Privacy Policy</h2>
 
-    <p>Adept Accountancy Group (“we”, “our”, “us”) is committed to protecting your personal information. This Privacy Policy explains what data we collect, how we use it, and your rights.</p>
+        <p>Adept Accountancy Group is committed to protecting your personal information. This Privacy Policy explains what information we collect, how we use it and your rights.</p>
 
-    <h3>1. Information We Collect</h3>
-    <p>We may collect contact details, business information, financial records, and basic website usage data.</p>
+        <h3>1. Information We Collect</h3>
+        <p>We may collect your name, contact details, business information, financial records, tax information, identity verification details and messages you send to us.</p>
 
-    <h3>2. How We Use Your Information</h3>
-    <p>We use your information to provide accounting services, prepare returns, communicate with you, maintain records, and improve our services.</p>
+        <h3>2. How We Use Your Information</h3>
+        <p>We use your information to respond to enquiries, provide accountancy and tax services, prepare and submit returns, maintain records, comply with legal obligations and manage our relationship with you.</p>
 
-    <h3>3. Legal Basis</h3>
-    <p>We process your data under contract, legal obligation, and legitimate interest.</p>
+        <h3>3. Legal Basis</h3>
+        <p>We process personal data where necessary for contract, legal obligation, legitimate interests and, where required, consent.</p>
 
-    <h3>4. Data Storage & Security</h3>
-    <p>We store data securely using reputable cloud systems and retain records only as required by law
+        <h3>4. Data Storage and Security</h3>
+        <p>We store information securely using reputable systems and take reasonable steps to protect personal data from unauthorised access, loss or misuse.</p>
+
+        <h3>5. Sharing Information</h3>
+        <p>Where necessary, we may share information with HMRC, Companies House, software providers, professional advisers, regulators and other parties where required to provide services or comply with the law.</p>
+
+        <h3>6. Retention</h3>
+        <p>We retain records only for as long as necessary for legal, regulatory, tax and business purposes.</p>
+
+        <h3>7. Your Rights</h3>
+        <p>You may have the right to access, correct, delete, restrict or object to the processing of your personal data.</p>
+
+        <h3>8. Contact</h3>
+        <p>For privacy queries, contact: info@adeptaccountancygroup.co.uk</p>
+
+        <h3>9. Complaints</h3>
+        <p>If you are unhappy with how your data is handled, you can contact us first. You also have the right to complain to the Information Commissioner’s Office.</p>
+    </div>
+</section>
+
+<footer>
+    <p><strong>Adept Accountancy Group</strong></p>
+    <p>Email: <a href="mailto:info@adeptaccountancygroup.co.uk">info@adeptaccountancygroup.co.uk</a></p>
+    <p>Website: adeptaccountancygroup.co.uk</p>
+    <p><a href="#privacy">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
